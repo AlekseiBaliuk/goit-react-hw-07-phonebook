@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const FilterContainer = styled.div`
   margin-bottom: ${p => p.theme.space[4]}px;
-  width: 300px;
+  width: 350px;
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.grey}`};
   padding: ${p => p.theme.space[4]}px;
 `;

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const PhonebookForm = styled.form`
-  width: 300px;
+  width: 350px;
   padding: ${p => p.theme.space[4]}px;
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.grey}`};
   margin-bottom: ${p => p.theme.space[4]}px;

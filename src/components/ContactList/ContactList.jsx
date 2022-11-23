@@ -13,10 +13,16 @@ export const ContactList = () => {
     contact.name.toLowerCase().includes(normalizedFilter)
   );
   return (
-    <ContactListUl>
-      {visibleContacts.map(({ id, name, number }) => (
-        <ContactListItem key={id} id={id} name={name} number={number} />
-      ))}
-    </ContactListUl>
+    <>
+      {contacts.length > 0 ? (
+        <ContactListUl>
+          {visibleContacts.map(({ id, name, phone }) => (
+            <ContactListItem key={id} id={id} name={name} phone={phone} />
+          ))}
+        </ContactListUl>
+      ) : (
+        <p>No contacts</p>
+      )}
+    </>
   );
 };
